@@ -29,6 +29,4 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'ENABLE_MODULE_VERIFIER' => 'YES' }
 
-  s.dependency 'SSNavigation'
-
 end
