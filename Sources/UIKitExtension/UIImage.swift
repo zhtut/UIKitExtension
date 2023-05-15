@@ -11,8 +11,7 @@
 import UIKit
 
 
-extension UIView {
-
+public extension UIView {
     func asImage() -> UIImage {
         let renderer = UIGraphicsImageRenderer(bounds: bounds)
         return renderer.image { rendererContext in

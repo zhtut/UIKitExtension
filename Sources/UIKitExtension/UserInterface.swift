@@ -12,6 +12,7 @@ import Combine
 
 public let kMainScreenRatio = UIScreen.main.bounds.size.height / UIScreen.main.bounds.size.width
 
+@available(iOS 13.0, *)
 public func userInterfacePublisher() -> AnyPublisher<Bool, Never> {
     let observer = ObserverView.shared
     let publisher = observer.publisher
@@ -19,10 +20,12 @@ public func userInterfacePublisher() -> AnyPublisher<Bool, Never> {
     return publisher.eraseToAnyPublisher()
 }
 
+@available(iOS 13.0, *)
 public var isDark: Bool {
     return ObserverView.shared.isDark
 }
 
+@available(iOS 13.0, *)
 private class ObserverView: UIView {
 
     static let shared = ObserverView()

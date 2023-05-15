@@ -10,6 +10,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 public extension UIWindow {
 
     static var rootController: UIViewController? {

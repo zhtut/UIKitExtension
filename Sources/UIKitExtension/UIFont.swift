@@ -19,47 +19,47 @@ import UIKit
 
     /// 34.0 SFUI-Regular
     @available(iOS 11.0, *) @objc
-    public static let largeTitle = UIFont.preferredFont(forTextStyle: .largeTitle)
+    static let largeTitle = UIFont.preferredFont(forTextStyle: .largeTitle)
 
     /// 28.0 SFUI-Regular
     @available(iOS 9.0, *) @objc
-    public static let title1 = UIFont.preferredFont(forTextStyle: .title1)
+    static let title1 = UIFont.preferredFont(forTextStyle: .title1)
 
     /// 22.0 SFUI-Regular
     @available(iOS 9.0, *) @objc
-    public static let title2 = UIFont.preferredFont(forTextStyle: .title2)
+    static let title2 = UIFont.preferredFont(forTextStyle: .title2)
 
     /// 20.0 SFUI-Regular
     @available(iOS 9.0, *) @objc
-    public static let title3 = UIFont.preferredFont(forTextStyle: .title3)
+    static let title3 = UIFont.preferredFont(forTextStyle: .title3)
 
     /// 17.0    SFUI-Semibold
     @available(iOS 7.0, *) @objc
-    public static let headline = UIFont.preferredFont(forTextStyle: .headline)
+    static let headline = UIFont.preferredFont(forTextStyle: .headline)
 
     /// 15.0 SFUI-Regular
     @available(iOS 7.0, *) @objc
-    public static let subheadline = UIFont.preferredFont(forTextStyle: .subheadline)
+    static let subheadline = UIFont.preferredFont(forTextStyle: .subheadline)
 
     /// 17.0 SFUI-Regular
     @available(iOS 7.0, *) @objc
-    public static let body = UIFont.preferredFont(forTextStyle: .body)
+    static let body = UIFont.preferredFont(forTextStyle: .body)
 
     /// 16.0 SFUI-Regular
     @available(iOS 9.0, *) @objc
-    public static let callout = UIFont.preferredFont(forTextStyle: .callout)
+    static let callout = UIFont.preferredFont(forTextStyle: .callout)
 
     /// 13.0 SFUI-Regular
     @available(iOS 7.0, *) @objc
-    public static let footnote = UIFont.preferredFont(forTextStyle: .footnote)
+    static let footnote = UIFont.preferredFont(forTextStyle: .footnote)
 
     /// 12.0 SFUI-Regular
     @available(iOS 7.0, *) @objc
-    public static let caption1 = UIFont.preferredFont(forTextStyle: .caption1)
+    static let caption1 = UIFont.preferredFont(forTextStyle: .caption1)
 
     /// 11.0 SFUI-Regular
     @available(iOS 7.0, *) @objc
-    public static let caption2 = UIFont.preferredFont(forTextStyle: .caption2)
+    static let caption2 = UIFont.preferredFont(forTextStyle: .caption2)
 }
 
 @objc public extension UIFont {
