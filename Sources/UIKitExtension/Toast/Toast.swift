@@ -85,7 +85,7 @@ open class Toast: UIView {
         let label = UILabel()
         label.text = message
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 15)
+        label.font = .subheadline
         label.textColor = .white
         label.numberOfLines = 0
         background.addSubview(label)

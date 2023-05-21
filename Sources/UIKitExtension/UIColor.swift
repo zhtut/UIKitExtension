@@ -20,9 +20,34 @@ public func rgba(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, _ a: CGFloat) -> UICo
     return UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)
 }
 
-extension UIColor {
+open class UIColorManager {
+    public static var darkTheme: UIColor = .systemIndigo
+    public static var lightTheme: UIColor = .systemTeal
+}
 
-    public convenience init?(hex: String) {
+public extension UIColor {
+
+    static var theme: UIColor {
+        return UIColor { trait in
+            if trait.userInterfaceStyle == .dark {
+                return UIColorManager.darkTheme
+            } else {
+                return UIColorManager.lightTheme
+            }
+        }
+    }
+
+    static var cellBackground: UIColor {
+        UIColor(dynamicProvider: { traitCollection in
+            if (traitCollection.userInterfaceStyle == .dark) {
+                return .secondarySystemBackground
+            } else {
+                return .white
+            }
+        })
+    }
+
+    convenience init?(hex: String) {
 
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
