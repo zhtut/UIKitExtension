@@ -31,7 +31,7 @@ private class ObserverView: UIView {
     static let shared = ObserverView()
 
     var publisher = CurrentValueSubject<Bool, Never>(false)
-    var isDark: Bool = false {
+    @Published var isDark: Bool = false {
         didSet {
             publisher.send(isDark)
         }
