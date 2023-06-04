@@ -12,6 +12,22 @@ private let leading = 16.0
 private let space = 8.0
 private let top = 12.0
 
+public func showLoading(_ message: String) {
+    DispatchQueue.main.async {
+        if let keyWindow = UIWindow.keyWindow {
+            keyWindow.showLoading(message)
+        }
+    }
+}
+
+public func hideLoading() {
+    DispatchQueue.main.async {
+        if let keyWindow = UIWindow.keyWindow {
+            return keyWindow.hideLoading()
+        }
+    }
+}
+
 public extension UIView {
 
     @discardableResult

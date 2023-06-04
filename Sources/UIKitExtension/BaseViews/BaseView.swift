@@ -6,7 +6,7 @@
 //  Copyright © 2023 Buildyou Tech. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 open class BaseView: UIView {
     

@@ -10,18 +10,19 @@ import UIKit
 private let leading = 16.0
 private let top = 12.0
 
-@discardableResult
-public func toast(_ message: String, position: Toast.Position = .center) -> Toast {
-    if let keyWindow = UIWindow.keyWindow {
-        return keyWindow.toast(message, position: position)
-    } else {
-        return Toast(message: message)
+public func toast(_ message: String, position: Toast.Position = .center) {
+    DispatchQueue.main.async {
+        if let keyWindow = UIWindow.keyWindow {
+            keyWindow.toast(message, position: position)
+        }
     }
 }
 
 public func hideToast(animated: Bool) {
-    if let keyWindow = UIWindow.keyWindow {
-        return keyWindow.hideToast(animated: animated)
+    DispatchQueue.main.async {
+        if let keyWindow = UIWindow.keyWindow {
+            return keyWindow.hideToast(animated: animated)
+        }
     }
 }
 
